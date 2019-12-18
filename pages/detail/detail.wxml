@@ -1,0 +1,45 @@
+<swiper
+  indicator-dots="{{indicatorDots}}"
+  autoplay="{{autoplay}}"
+  interval="{{interval}}"
+  duration="{{duration}}"
+>
+  <block wx:for="{{imgUrls}}" wx:key="id">
+    <swiper-item>
+      <image src="{{item.src}}" class="slide-image" width="355" height="150" />
+    </swiper-item>
+  </block>
+</swiper>
+<view class="foodname">
+<text>名称:</text>
+ <text>麻辣兔头</text>
+</view>
+<view class="foodprice">
+  <text>价格:</text><text class="price">￥{{price}}元</text>
+</view>
+<view class="fooddiscount">
+  <text>折扣:</text><text class="discount">8折</text>
+</view>
+<view class="foodnum">
+  <text>库存数量:</text><text class="num">8888</text>
+</view>
+<view class="buyinfo">
+  <text>已选</text><text>{{weight}},</text><text><text>{{num}}</text>件</text>
+</view>
+<view class="spec">
+  <text>规格:</text><button class="{{btnStatus=='1'?'selected':''}}" data-type="1" bindtap="changeActive">180g</button><button bindtap="changeActive" data-type="2" class="{{btnStatus=='2'?'selected':''}}">360g</button>
+</view>
+<view class="ajustnum">
+  <text>数量:</text><button bindtap="changeNum" data-type="0">-</button><input type="text" value="{{num}}"/><button bindtap="changeNum" data-type="1">+</button>
+</view>
+<view class="buyinfo">
+  <text>总价</text><text>{{totalPrice}}元</text>
+</view>
+
+<view class="goodDetail">
+  <text>商品介绍:</text>
+  <view class="description">
+    随着时间的推移中国的现代化步伐也在加快前进，人力企业生产力社会的方方面面都面临着前所未有的变革。改革开放的四十多年的高速发展，中国积累了大量的资金和技术优势，新型行业层出不穷，同时，这些行业的有着很高的不确定性和未知性。所以，想可持续的发展下去，还面临这局打的考验。作为互联网行业的相关人员,要有危机感，时刻保持战斗状态。俗话说：打铁还得自身硬，每个人都需要对自己有一个客观的认知，不断学习，不断改变，全面提升自我，跟上时代的步伐。勇敢的张开臂膀拥抱挑战。
+  </view>
+</view>
+<view class="confirmbtncontainer"><button bindtap="goConfirmOder" class="conform" type="primary">确认付款</button></view>

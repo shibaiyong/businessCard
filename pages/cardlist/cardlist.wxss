@@ -1,0 +1,60 @@
+
+
+.carddetailcontainer{
+    background:#edeef0;
+    min-height: 100vh;
+    position:relative;
+  }
+  
+  .keyinfo{
+    width:100%;
+    display:flex;
+    align-items: center;
+  }
+  
+  .carddetailcontainer .bg-color{
+    height: 200rpx;
+    background:#494e62;
+  }
+  .person-info{
+    width:88%;
+    margin:30rpx auto;
+    background:white;
+    border:1px solid #ddd;
+    border-radius: 8rpx;
+    box-shadow: 0 0 8rpx #ddd;
+    padding:44rpx;
+    box-sizing: border-box;
+    position:relative;
+  }
+  
+  .edit{
+      position: absolute;
+      right:20rpx;top:50%;
+      color:red;
+      font-size:28rpx;
+      margin-top:14rpx;
+  }
+  
+  .keyinfo .divide,.keyinfo .position{
+    font-size: 28rpx;
+    color:#86878c;
+  }
+  
+  .keyinfo .divide{
+    margin:0 10rpx;
+  }
+  .keyinfo .name{
+    font-size: 34rpx;
+  }
+  .keyinfo .person-company{
+    color:#ddc386;
+    font-size:28rpx;
+  }
+  .link-info .tex {
+    color:#626262;
+    font-size:28rpx;
+    margin-top:16rpx;
+    padding-left:50rpx;
+    box-sizing:border-box;
+  }

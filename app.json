@@ -1,0 +1,35 @@
+{
+  "pages": [
+    "pages/add/add",
+    "pages/index/index",
+    "pages/cardlist/cardlist",
+    "pages/edit/edit",
+    "pages/logs/logs",
+    "pages/detail/detail"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#4189c3",
+    "navigationBarTitleText": "WeChat",
+    "navigationBarTextStyle": "white"
+  },
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "iconPath": "img/addr.png",
+        "text": "首页"
+      },
+      {
+        "pagePath": "pages/cardlist/cardlist",
+        "iconPath": "img/addr.png",
+        "text": "名片夹"
+      }
+    ]
+  },
+  "permission": {
+    "scope.userLocation": {
+      "desc": "你的位置信息将用于小程序位置接口的效果展示"
+    }
+  }
+}

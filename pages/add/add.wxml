@@ -1,0 +1,10 @@
+<!--logs.wxml-->
+<view class="addcontainer">
+  <view class="logo">
+      <image src="../../img/logo.jpg" mode="scaleToFill" style="width:140px;height:140px;"></image>
+  </view>
+  <view class="card_description">您身边的名片管理专家</view>
+  <view class="btn-area">
+      <button type="primary" hover-class="none" bindtap="linkTo1">我要创建名片</button>
+    </view>
+</view>

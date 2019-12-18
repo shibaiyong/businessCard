@@ -1,0 +1,103 @@
+<!--index.wxml-->
+<view class="carddetailcontainer">
+  <view class="bg-color">
+
+  </view>
+
+  <view class="person-info" wx:for="{{cardlist}}" wx:key="{{item.id}}">
+    <view class="keyinfo">
+      <image src="{{item.imgurl?item.imgurl:'../../img/personhead.png'}}" mode="scaleToFill" style="width:60px;height:60px;margin-right:15rpx;">
+      </image>
+      <view class="keyinfodetail">
+        <view class="person-name">
+          <text class="name">{{item.username}}</text><text class="divide">|</text><text class="position">商务BD</text>
+        </view>
+        <view class="person-company">乐游航中网络有限公司</view>
+      </view>
+    </view>
+    <view class="link-info">
+      <view class="moblie tex"
+        style="background:url(../../img/mobile.jpg) no-repeat left center;background-size:40rpx 40rpx;">{{item.phone}}
+      </view>
+      <view class="email tex"
+        style="background:url(../../img/message.jpg) no-repeat left center;background-size:40rpx 40rpx;">
+        shibaiyong@bzqmall.com</view>
+      <view class="address tex"
+        style="background:url(../../img/position.jpg) no-repeat left center;background-size:40rpx 40rpx;"><text>{{item.province+item.city+item.address}}</text><button type="default" size="mini" hover-class="none" bindtap="Location">导航</button></view>
+    </view>
+  </view>
+  <view class="person-opt-container">
+    <view class="person-opt">
+      <button type="default" size="{{defaultSize}}" hover-class="none" bindtap="addConnect"><image src="../../img/cardcode.jpg" mode="scaleToFill" style="width:60px;height:60px;"></image><text>名片码</text></button>
+      <button type="default" size="{{defaultSize}}" hover-class="none" open-type="share" id="cardshare"><image src="../../img/cardshare.jpg" mode="scaleToFill" style="width:60px;height:60px;"></image><text>分享</text></button>
+      <button type="default" size="{{defaultSize}}" hover-class="none" bindtap="addConnect"><image src="../../img/cardedit.jpg" mode="scaleToFill" style="width:60px;height:60px;"></image><text>编辑名片</text></button>
+    </view>
+  </view>
+
+  <view class="person-opt-container industry">
+    <text>行业：</text><text>其他行业</text>
+    
+  </view>
+
+  <!-- <view class="person-info-scroll">
+    <scroll-view class="scroll-view_H" scroll-x="{{scrollX}}" style="width: 100%">
+      <button type="default" size="{{defaultSize}}">
+        <image src="../../img/mobile1.jpg" mode="scaleToFill" style="width:40rpx;height:40rpx;"></image>13716431631
+      </button>
+      <button type="default" size="{{defaultSize}}">
+        <image src="../../img/wechat1.jpg" mode="scaleToFill" style="width:40rpx;height:40rpx;"></image>Margueritequeen
+      </button>
+      <button type="default" size="{{defaultSize}}">
+        <image src="../../img/location1.jpg" mode="scaleToFill" style="width:40rpx;height:40rpx;"></image>浙江省杭州市滨江区
+      </button>
+    </scroll-view>
+  </view> -->
+
+  <!-- <view class="mysometing">
+    <view class="mysometinginner">
+      <view class="mineitem" wx:for="{{mineifoList}}" wx:key="{{item.id}}" bindtap="changeStatus" data-id="{{item.id}}">
+        <image class="" src="{{item.img}}" mode="scaleToFill" style="width:50rpx;height:50rpx;" />
+        <view class="introduceTip">
+          {{item.text}}
+        </view>
+        <view class="bordered" wx:if="{{currentid==item.id}}">
+        </view>
+      </view>
+    </view>
+
+    <view class="itemdetail" wx:if="{{currentid==1}}">
+      暂无简介1
+    </view>
+    <view class="itemdetail" wx:if="{{currentid==2}}">
+      暂无简介2
+    </view>
+    <view class="itemdetail" wx:if="{{currentid==3}}">
+      暂无简介3
+    </view>
+  </view> -->
+
+  <!-- <view class="bottombanner" bindtap="openshowToast">
+    <image src="../../img/bottombanner_03.jpg" style="width:88%;height:130rpx;margin:0 auto;"/>
+  </view> -->
+
+
+  <view style="height:140rpx;"></view>
+
+  <view class="showtoastcontainer" wx:if="{{showToast}}">
+    <view class="showtoast">
+      <view class="close-icon"><icon type="{{iconType}}" size="20" bindtap="closeShowToast"/></view>
+      <view class="header-title">免费创建乐名片</view>
+      <view class="section phone">
+        <input placeholder="请输入手机号"/>
+      </view>
+      <view class="section verify">
+        <input placeholder="验证码" /><text>获取验证码</text>
+      </view>
+
+      <view class="createCard">
+          <button type="default" size="{{defaultSize}}">确定</button>
+      </view>
+
+    </view>
+  </view>
+</view>

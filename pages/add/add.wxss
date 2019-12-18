@@ -1,0 +1,38 @@
+.log-list {
+  display: flex;
+  flex-direction: column;
+  padding: 40rpx;
+}
+.log-item {
+  margin: 10rpx;
+}
+.logo{
+  width:100%;
+  text-align: center;
+}
+
+.btn-area{
+  text-align:center;
+  margin-top:24rpx;
+  width:100%;
+}
+
+.btn-area button{
+  background:#4189c3;
+  border-radius: 23px;
+  width:80%;
+}
+
+.btn-area button{
+  background:#4189c3;
+  border-radius: 23px;
+  width:80%;
+}
+
+.card_description{
+  width:100%;
+  text-align: center;
+  font-size:30rpx;
+  color:#1a1a1c;
+  margin-bottom: 80rpx;
+}

@@ -1,0 +1,54 @@
+.adresscontainer{
+    padding:0 20rpx;
+}
+
+.section__title, .section_default_area{
+    font-size:32rpx;
+    width:20%;
+    display:inline-block;
+    vertical-align: middle;
+}
+.section_default_area{
+    width:30%;
+    float:left;
+}
+.user,.phone,.area,.detail_area{
+    width:80%;
+    display:inline-block;
+    vertical-align: middle;
+    font-size: 32rpx;
+}
+.default_area{
+    zoom:0.6;
+    float:right;
+}
+.btn-area{
+    text-align:center;
+    margin-top:24rpx;
+    position: fixed;
+    bottom:40rpx;
+    width:100%;
+    left:0;
+}
+.btn-area button{
+    width:90%;
+    background:#4189c3;
+}
+.section{
+    margin-bottom:24rpx;
+    overflow:hidden;
+}
+
+.head_img{
+    margin-top:20rpx;
+}
+
+.head_img image,.head_img text{
+    vertical-align: middle
+}
+
+.head_img text{
+    margin-right: 16rpx;
+    font-size:32rpx;
+
+}

@@ -1,0 +1,235 @@
+
+.carddetailcontainer{
+  background:#edeef0;
+  min-height: 100vh;
+  position:relative;
+}
+
+.keyinfo{
+  width:100%;
+  display:flex;
+  align-items: center;
+}
+
+.carddetailcontainer .bg-color{
+  height: 200rpx;
+  background:#4189c3;
+}
+.person-info{
+  width:88%;
+  margin:0 auto;
+  margin-top:-120rpx;
+  background:white;
+  border-radius: 8rpx;
+  box-shadow: 0 0 8rpx #ddd;
+  padding:44rpx;
+  box-sizing: border-box;
+}
+
+
+.keyinfo .divide,.keyinfo .position{
+  font-size: 28rpx;
+  color:#86878c;
+}
+
+.keyinfo .divide{
+  margin:0 10rpx;
+}
+.keyinfo .name{
+  font-size: 34rpx;
+}
+.keyinfo .person-company{
+  color:#ddc386;
+  font-size:28rpx;
+}
+.link-info .tex {
+  color:#626262;
+  font-size:28rpx;
+  margin-top:16rpx;
+  padding-left:50rpx;
+  box-sizing:border-box;
+}
+/* .link-info .moblie{
+  background:url(../../img/mobile.jpg) no-repeat left center;
+} */
+
+.person-opt{
+  width:88%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin:0rpx auto;
+}
+.person-opt text{
+  display:block;
+}
+
+.address button[size=mini]{
+  font-size: 22rpx;
+  line-height: 1.1;
+  padding:4rpx 10rpx;
+  color:orangered;
+  vertical-align: middle;
+  background:white;
+}
+
+.address{
+  display:flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.address text{
+  vertical-align: middle;
+}
+
+.address button[size=mini]::after {
+  border-color:orangered;
+  vertical-align: middle;
+}
+
+.person-opt-container{
+  width:100%;
+  background:white;
+  padding:20rpx 0;
+  box-sizing: border-box;
+  margin-top:40rpx;
+}
+
+.industry{
+  text-align: center;
+  font-size: 30rpx;
+}
+
+.person-opt .actived{
+  background:#42475a;
+  color:white;
+}
+
+.person-opt button{
+  width:30%;
+  margin:0;
+  color:#50525e;
+  font-size:28rpx;
+  line-height: 1.2;
+  background:white;
+}
+
+.person-opt button::after {
+  border: none;
+}
+
+.person-info-scroll{
+  width:100%;
+  margin:0 auto;
+}
+
+.person-info-scroll button{
+  display: inline-block;
+  margin:0 18rpx;
+  font-size:28rpx;
+  line-height: 2.8;
+}
+
+.person-info-scroll button image{
+  vertical-align: middle;
+  margin-right: 10rpx;
+}
+
+.person-info-scroll .scroll-view_H{
+  display: flex;
+  white-space: nowrap;
+}
+
+.mysometing{
+  width:88%;
+  padding:20rpx 40rpx 0;
+  box-sizing: border-box;
+  margin:0 auto;
+  background:white;
+  margin-top:28rpx;
+}
+
+.mysometing .mysometinginner{
+  width:100%;
+  display:flex;
+  justify-content: space-between;
+  text-align: center;
+  border-bottom:1px solid #eee;
+}
+
+.mysometing .mysometinginner .mineitem{
+  font-size: 0;
+}
+
+.mysometing .mysometinginner .mineitem .introduceTip{
+  font-size:28rpx;
+}
+
+.mysometing .mysometinginner .mineitem .bordered{
+  width:40rpx;
+  border-bottom:8rpx solid #494e62;
+  margin:0 auto;
+  margin-top:14rpx;
+}
+
+.itemdetail{
+  font-size:30rpx;
+  color:#6c6b7d;
+  
+  background:white;
+  height:200rpx;
+  padding-top:30rpx;
+  box-sizing: border-box;
+}
+
+.bottombanner{
+  width:100%;
+  text-align: center;
+  margin:30rpx 0 0rpx;
+}
+
+.showtoastcontainer{
+  position: absolute;
+  height:100%;
+  width:100%;top:0;
+  background:rgba(0,0,0,0.5);
+  display:flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.showtoast{
+  background:white;
+  width:80%;
+  padding: 30rpx 30rpx 70rpx;
+  border-radius: 10rpx;
+}
+
+.close-icon{
+  text-align: right;
+  
+}
+
+.showtoastcontainer .verify{
+  display:flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-title{
+  text-align: center;
+  font-size:32rpx;
+}
+
+.showtoastcontainer .section{
+  border-bottom:1px solid #eee;
+  margin-top:60rpx;
+}
+.createCard{
+  margin-top:100rpx;
+}
+.createCard button{
+  background:#373a4d;
+  color:white;
+}
